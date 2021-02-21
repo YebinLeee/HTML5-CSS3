@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	p{
+		background-color:lightgreen;
+		width:200px; height:50px;
+	}
+	#target1{
+		border:1px solid black;
+		width:300px; height:100px;
+		overflow:scroll; /*부모 id로 설정한 부분 중 크기를 넘어간 부분에 대해선 스크롤이 동작되도록 함*/
+	}
+	#target2{
+		border:1px solid black;
+		width:300px; height:100px;
+		overflow:hidden;
+	}
+	#target3{
+		border:1px solid black;
+		width:300px; height:100px;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="target1">
+		<p>block #1</p>
+		<p>block #2</p>
+		<p>block #3</p>
+		<p>block #4</p>
+		<p>block #5</p>
+	</div>
+	<div id="target2">
+		<p>block #1</p>
+		<p>block #2</p>
+		<p>block #3</p>
+		<p>block #4</p>
+		<p>block #5</p>
+	</div>
+	<div id="target3">
+		<p>block #1</p>
+		<p>block #2</p>
+		<p>block #3</p>
+		<p>block #4</p>
+		<p>block #5</p>
+	</div>
+</body>
+</html>

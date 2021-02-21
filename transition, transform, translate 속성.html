@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	
+	#mouse {
+		width:300px; height:50px;
+		border:1px solid black;
+		background:yellow;
+		padding:none;
+		transition: width 2s, background 5s, height 5s, border 4s, padding 3s, transform 3s /* 전환이 일어나는 대상, 전환이 일어나는 시간 */
+	}
+	#mouse:hover{
+		width:200px; height:30px;
+		padding:10px;
+		border:10px dotted red;
+		background:lightgreen;
+		transform:rotate(180deg);
+	}
+	div{
+		width:50px;height:50px;
+		background-color:yellow;
+		border:1px solid black;
+		text-align:center;
+	}
+	div#box2{
+		transform:translate(100px, 0px); /*평행이동: x축으로 100만큼, y축으로는 0만큼 이동*/
+		background-color:lightgreen;
+	}
+	div#box3{
+		transform:scale(1.5, 0.5); /*일정 배만큼 x축 확대, y축 확대*/
+		background-color:blue;
+	}
+	div#box4{
+		transform:rotate(30deg); /*일정 각도 만큼 회전하도록 변경*/
+		background-color:red;
+	}
+	div#box5{
+		transform:scale(0.5,0.5);
+		background-color:pink;
+	}
+	div#box6{
+		transform:rotate(-30deg); /*음수는 왼쪽 방향으로*/
+		background-color:green;
+	}
+	div#box7{
+		transform:skew(40deg,30deg); /*x축, y축으로 뒤틀리게, 잡아당긴 듯한 느낌*/
+		background-color:blue;
+	}
+	div#box8{
+		width:100px;height:100px;
+		transform: translate(80px, 80px) scale(1.5, 2.4) rotate(80deg); /*전환 속성 여러가지 한 꺼번에 주기*/
+		background-color:blue;
+	}
+	div#box9:hover{
+		width:100px; height:100px;
+		transform:matrix(0.9, 0.5, 0.2, -0.3, 5, 3); /*차례대로 scaleX, skewX, skewY, scaleY, translateX, translateY 값*/
+		background-color:red;
+	}
+	div#box9{
+		width:50px; height:60px;
+		transform:matrix(0.9, 0.5, 0.2, -0.3, 5, 3); /*차례대로 scaleX, skewX, skewY, scaleY, translateX, translateY 값*/
+		background-color:red;
+		transition: width 5s, height 3s;
+	}
+</style>
+</head>
+<body>
+	<div id="mouse">마우스를 올려보세요.</div>
+	<div id="box1">Box1</div>
+	<div id="box2">Box2</div>
+	<div id="box3">Box3</div>
+	<div id="box4">Box4</div>
+	<div id="box5">Box5</div>
+	<div id="box6">Box 6</div>
+	<div id="box7">Box 7</div>
+	<div id="box8">Box 8</div>
+	<div id="box9">Box 9</div>
+</body>
+</html>

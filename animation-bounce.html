@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>튀어오르는 공</title>
+<style>
+	@keyframes bounce{
+		0%{
+			bottom: 0px; 
+			animation-timing-function:ease-out; 
+		}
+		25%{
+			bottom: 300px; 
+			animation-timing-function:ease-out; 
+		}
+		50%{
+			bottom: 200px; 
+			animation-timing-function:ease-out; 
+		} /*올라갔다 다시 내려오도록 설정*/
+		75%{
+			bottom: 400px; 
+			animation-timing-function:ease-out; 
+
+		}
+		100%{
+			bottom: 0px; 
+			animation-timing-function:ease-out; 
+		}
+/* 시작과 끝을 나타내고 싶은 경우 
+	from, to{}
+	50%{}} -> 0과 100%
+*/
+	}
+	#ball{
+		position:absolute;
+		width:50px; height:50px;
+		background:skyblue;
+		border-radius:50px;
+		animation-name:bounce;
+		animation-iteration-count:infinite;
+		animation-direction:alternate;
+		animation-duration:5s;
+	}
+</style>
+</head>
+<body>
+	<div id="ball"></div>
+</body>
+</html>

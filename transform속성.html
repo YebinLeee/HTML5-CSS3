@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+	div{
+		background-color:grey;
+		height:150px;width:500px;
+		color:blue;
+	}
+	.container{
+		background-color:skyblue;
+		border:1px solid blue;
+
+	}
+	.transformed{
+		transform: perspective(1000px) rotateY(-60deg) rotateX(0deg) ; /*perspective: 원근 변환- 보는 사람과 화면 사이의 거리감을 나타내는 속성. 값이 커질수록 물체가 멀어진다는 느낌*/
+	}
+		/* 3차원으로 변환
+	translate3d(x,y,z); translateX(x), translateZ(z);
+	rotate3d(x,y,z); rotateY(y);
+	scale3d(x,y,z); scaleY(y);
+	한꺼번에 혹은 따로따로 값을 부여할 수 있움
+	*/
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="transformed">CSS 3에는 3차원 변환 효과를 줄 수 있는 속성들과 메서드를 제공한다. <br> 가장 대표적인 3차원 변환은 박스를 약간 옆으로 회전시키는 것이다. 3차원 변환은 이전의 구버전의 브라우저에서는 동작하지 않으며, 인터넷 익스플로어에서도 어느정도 지원한다. </div>
+	</div>
+</body>
+</html>
