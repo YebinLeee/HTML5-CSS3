@@ -29,4 +29,7 @@
 <br>
 [transition, transform, translate](https://yebinleee.github.io/HTML5-CSS3/transition,%20transform,%20translate%20%EC%86%8D%EC%84%B1.html)
 
+<br>
 
+[flow type layout](https://yebinleee.github.io/HTML5-CSS3/%EC%9C%A0%EB%8F%99%ED%98%95%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83.html)
+[layout float](https://yebinleee.github.io/HTML5-CSS3/%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%20float.html)
